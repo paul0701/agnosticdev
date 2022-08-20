@@ -1,0 +1,90 @@
+body {
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
+  .page-one {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: #a5bad0;
+    height: 80vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+    margin-bottom: -10vw;
+    border: solid black;
+  }
+
+  .page-two {
+    position: relative;
+    background-color: darksalmon;
+    font-size: 10px;
+    height: 100vh;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+    margin-bottom: -10vw;
+  }
+
+  .page-three {
+    position: relative;
+    text-align: center;
+    background-color: aqua;
+    height: 180vh;
+    z-index: -2;
+  }
+
+.about-me {
+  border: solid black;
+}
+.image {
+  border: solid black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+  @media screen and (max-width: 290px) {
+    .page-one {
+        max-height: 40vh;
+    }
+ 
+    .footer {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .page-one {
+        max-height: 40vh;
+    }
+      
+      .footer {
+        font-size: 14px;
+      }
+
+}
+
+
+@media screen and (max-width: 1050px) {
+  .page-one {
+      max-height: 40vh;
+  }
+    .footer {
+      font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

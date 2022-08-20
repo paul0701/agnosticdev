@@ -1,0 +1,36 @@
+
+.grid-container {
+    background-color: cornsilk;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 100px;
+    column-gap: 20px;
+    row-gap: 10px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.image-one {
+    background: url('https://user-uploads-thumbs.shutterstock.com/aws-cloudfront-user-asset-uploads-prod-us-east-1/uploads/6d43c523-611b-487c-be57-6ac3c770f356/p/8321c5d416ba0444c479c6e22c3c94016f733993/1660809646898/sml-snippet/png/1660809649/1500x1500/fit/8ecff4457424c455fc9097330453a1c51bf1f1e0/sml-snippet.jpg');
+    background-size: cover;
+    grid-column: span 2;
+    grid-row: span 3;
+    border-radius: 20px;
+}
+
+.image-one:hover {
+    width: 300px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 450px) {
+    .grid-container {
+        max-width: 100%;
+    }
+
+    .image-one {
+        grid-column: span 12;
+        grid-row: span 6;
+    }
+}
