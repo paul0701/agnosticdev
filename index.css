@@ -1,5 +1,6 @@
 body {
     font-family: "Ubuntu Condensed", sans-serif;
+    
   }
   .page-one {
     position: relative;
@@ -7,10 +8,8 @@ body {
     place-items: center;
     background-color: #a5bad0;
     height: 80vh;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
-    margin-bottom: -10vw;
-    border: solid black;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: -10vh;
   }
 
   .page-two {
@@ -19,8 +18,8 @@ body {
     font-size: 10px;
     height: 100vh;
     z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-    margin-bottom: -10vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    margin-bottom: -10vh;
   }
 
   .page-three {
